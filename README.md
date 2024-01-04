@@ -1,6 +1,6 @@
 # Assignment-1
 
-The nature of the assignment is explained belowe, including the rules and constraints. The assignment included 7 questions which required functions to written, these functions were then marked using pytests.
+The nature of the assignment is explained below, including the rules and constraints. The assignment included 7 questions which required functions to written, these functions were then marked using pytests.
 
 Skills included: string methods, functions, control flow statements, opening, reading and writing to text files
 
