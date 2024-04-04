@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+     <ol>
+        {% for Loan in loan_list %}
+            <li> {{loaned}} </li>
+        {% endfor %}
+     </ol>
+{% endblock %}

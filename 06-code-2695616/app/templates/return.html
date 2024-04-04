@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="POST" action="" novalidate>
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.studentId.label }}<br/>{{ form.studentId(size=30) }}<br/>
+        {% for error in form.studentId.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </div>
+    <div>
+        {{ form.deviceId.label }}<br/>{{ form.deviceId(size=30) }}<br/>
+        {% for error in form.deviceId.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </div>
+    <div>
+        {{ form.loanId.label }}<br/>{{ form.loanId(size=30) }}<br/>
+        {% for error in form.loanId.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </div>
+    <div>{{ form.submit() }}</div>
+</form>
+{% endblock %}
